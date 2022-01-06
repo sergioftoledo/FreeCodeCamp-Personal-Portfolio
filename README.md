@@ -1,0 +1,1 @@
+Last challenge to obtain the Responsive Web Design certification from FreeCodeCamp (Personal Portfolio Webpage).

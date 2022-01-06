@@ -1,0 +1,212 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;0,900;1,700&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* body {
+    overflow: hidden;
+} */
+
+#navbar {
+    z-index: 1;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color: black;
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    padding: 1.15rem;
+}
+
+@media (max-width: 550px) {
+    #navbar {
+        display: block;
+    }
+}
+
+.logo {
+    color: white;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-family:  'Lato', sans-serif;
+    font-weight: 900;
+    margin-right: 0.6rem;
+}
+
+.logo:hover {
+    color: gray;
+    transition: all 0.6s;
+}
+
+.menu {
+    display: flex;
+}
+
+.menu li {
+    margin-right: 0.9rem;
+    list-style: none;
+}
+
+.menu li a {
+    color: white;
+    font-family: 'Lato', sans-serif;
+    font-size: 1.4rem;
+    text-decoration: none;
+    text-transform: capitalize;
+    font-weight: 700;
+    user-select: none;
+}
+
+@media (max-width:550px) {
+    .menu li a {
+        font-size: 1rem;
+    }
+}
+
+.menu li a:hover {
+    color: gray;
+    transition: all 0.6s;
+}
+
+#welcome-section {
+    width: 100%;
+    height: 100vh;
+    background-color: #000;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#welcome-section h1 {
+    color: #fff;
+    font-family: 'Lato', sans-serif;
+    font-size: 5rem;
+    margin-left: 1rem ;
+}
+
+@media (max-width:550px) {
+    #welcome-section h1 {
+        font-size: 1.8rem;
+        margin-left: 0.7rem;
+    }
+}
+
+h2, h3 {
+    color: white;
+}
+
+h2 {
+    font-family: 'Lato', sans-serif;
+
+}
+
+.proyects {
+    height: 100vh;
+}
+
+.mis-proyectos {
+    background-color: rgb(6, 53, 114);
+    color: #fff;
+    font-weight: 900;
+    font-family: 'Lato', sans-serif;
+    font-size: 2rem;
+    padding: 5rem 0 0.5rem;
+    text-align: center;
+}
+
+.contenedor-proyectos {
+    width: 100%;
+    background-color: brown;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding: 12.5rem 0.5rem;
+}
+
+.project-tile:hover {
+    transition: all .5s;
+    transform: scale(1.05);
+}
+
+.tribute-page, .survey-form, .technical-page {
+    width: 600px;
+    height: 350px;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+@media (max-width:550px) {
+    .tribute-page, .survey-form, .technical-page {
+        width: 313px;
+        height: 335px;
+    }
+}
+
+.project-tile p {
+    text-align: center;
+    font-family: 'Lato', sans-serif;
+    font-weight: 600;
+    font-size: 1.75rem;
+    font-style: italic;
+    padding-bottom: 1rem;
+    color: white;
+}
+
+#contacto {
+    width: 100%;
+    height: 100vh;
+    background-color: #0d0d80;
+    padding: 10rem 0;
+}
+
+#contacto h2 {
+    text-align: center;
+    font-family: 'Lato', sans-serif;
+    font-size: 4rem;
+    font-weight: 700;
+    padding: 2.5rem 0;
+}
+
+.contactos {
+    text-align: center;
+}
+
+#profile-link {
+    margin-left: 0.8rem;
+    color: #fff;
+    font-family: 'Lato', sans-serif;
+    font-size: 1.8rem;
+    text-decoration: none;
+}
+
+@media (max-width:550px) {
+    #profile-link {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width:550px) {
+    #contacto h2 {
+        font-size: 2rem;
+    }
+}
+
+.icono {
+    color: white;
+    font-size: 2rem;
+    padding-right: 0.3rem;
+}
+
+@media (max-width:550px) {
+    .icono {
+        font-size: 1rem;
+    }
+}
