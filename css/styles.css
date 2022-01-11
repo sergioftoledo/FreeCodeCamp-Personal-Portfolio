@@ -10,9 +10,11 @@ html {
     scroll-behavior: smooth;
 }
 
-/* body {
-    overflow: hidden;
-} */
+@media (min-width:1380px) {
+    body {
+        overflow-y: hidden;
+    }
+}
 
 #navbar {
     z-index: 1;
@@ -29,6 +31,7 @@ html {
 @media (max-width: 550px) {
     #navbar {
         display: block;
+        text-align: center;
     }
 }
 
@@ -48,6 +51,15 @@ html {
 
 .menu {
     display: flex;
+}
+
+@media (max-width: 550px) {
+
+    .menu {
+        display: flex;
+        justify-content: center;
+        padding-top: 0.6rem;
+    }
 }
 
 .menu li {
@@ -127,8 +139,8 @@ h2 {
     background-color: brown;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-evenly;
-    padding: 12.5rem 0.5rem;
+    justify-content: space-around;
+    padding: 3.5rem 0;
 }
 
 .project-tile:hover {
@@ -136,16 +148,27 @@ h2 {
     transform: scale(1.05);
 }
 
+#tribute, #survey, #technical {
+    text-align: center;
+}
+
+@media (min-width:550px) {
+    #tribute, #survey, #technical {
+        width: 450px;
+        height: 350px;
+    }
+}
+
 .tribute-page, .survey-form, .technical-page {
-    width: 600px;
-    height: 350px;
+    width: 100%;
+    height: 100%;
     border-radius: 8px;
     object-fit: cover;
 }
 
 @media (max-width:550px) {
     .tribute-page, .survey-form, .technical-page {
-        width: 313px;
+        width: 275px;
         height: 335px;
     }
 }
@@ -158,6 +181,13 @@ h2 {
     font-style: italic;
     padding-bottom: 1rem;
     color: white;
+}
+
+@media (max-width:550px) {
+
+    .project-tile p {
+        font-size: 1rem;
+    }
 }
 
 #contacto {
